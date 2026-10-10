@@ -1,6 +1,5 @@
 # Linux Sysadmin Lab 01 — Ubuntu VM မှ Nginx Web Page အထိ
 
-Ubuntu VM တစ်လုံးကို စီမံရင်း **users/groups, permissions, SSH, package repair, Nginx, UFW, logs, Git** ကို လက်တွေ့စမ်းသပ်ထားတဲ့ portfolio lab ပါ။ အောက်ကပုံတွေက လုပ်နေစဉ်ရိုက်ထားတဲ့ actual screenshots တွေဖြစ်ပါတယ်။
 
 | Environment | Lab value |
 | --- | --- |
