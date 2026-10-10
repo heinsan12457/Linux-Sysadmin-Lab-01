@@ -9,7 +9,7 @@
 | Client IP | `192.168.100.110` |
 | Web service | Nginx, HTTP port `80` |
 
-> IP တွေက private lab network မှာသုံးခဲ့တာပါ။ VM ပြန်ဖွင့်ရင် IP ပြောင်းနိုင်ပါတယ်။ ကိုယ့်စက်မှာ ပြန်လုပ်မယ်ဆို `hostname -I` နဲ့ IP အသစ်ကို စစ်ပါ။
+> IP တွေက private lab network မှာသုံးခဲ့တာပါ။ VM ပြန်ဖွင့်ရင် IP ပြောင်းနိုင်ပါတယ်။ 
 
 ## 1. User, group နဲ့ shared directory
 
@@ -17,7 +17,7 @@
 
 ![lab-user သည် labs-ops group အဖွဲ့ဝင်ဖြစ်ကြောင်း terminal output](screenshots/01-user-and-group.png)
 
-`/srv/labs-share` ကို `root:labs-ops`, mode `2770` အဖြစ်သတ်မှတ်ခဲ့ပါတယ်။ `770` က owner/group ကို access ပေးပြီး others ကို ပိတ်ပါတယ်။ ရှေ့က `2` က setgid ဖြစ်လို့ ဒီ folder အောက်မှာ အသစ်ဖန်တီးတဲ့ file တွေက folder ရဲ့ `labs-ops` group ကို ဆက်ခံပါတယ်။ `root` ကို owner ထားတာက folder ကို သာမန် group member တစ်ယောက်က အလွယ်တကူ ပြင်မရစေဖို့ပါ။
+`/srv/labs-share` ကို `root:labs-ops`, mode `2770` အဖြစ်သတ်မှတ်ခဲ့ပါတယ်။ `770` က owner/group ကို access ပေးပြီး others ကို ပိတ်ပါတယ်။ ရှေ့က `2` က setgid ဖြစ်လို့ ဒီ folder အောက်မှာ အသစ်ဖန်တီးတဲ့ file တွေက folder ရဲ့ `labs-ops` group ကိုပဲယူမှာပါ။ `root` ကို owner ထားတာက folder ကို သာမန် group member တစ်ယောက်က အလွယ်တကူ ပြင်မရစေဖို့ပါ။
 
 ```bash
 sudo mkdir -p /srv/labs-share
