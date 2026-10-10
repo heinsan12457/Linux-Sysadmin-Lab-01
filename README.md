@@ -1,4 +1,5 @@
-# Linux Sysadmin Lab 01 — Ubuntu VM မှ Nginx Web Page အထိ
+## Linux Sysadmin Lab 01 
+Ubuntu VM မှ Nginx Web Page 
 
 
 | Environment | Lab value |
@@ -111,7 +112,7 @@ Git status မှာ README နဲ့ `lab.html` ကို stage လုပ်ထ
 
 ![Git status မှ staged README နှင့် lab.html](screenshots/17-git-staged.png)
 
-## သင်ယူခဲ့တာ
+## Learning Points
 
 - Owner, group, mode, setgid နဲ့ shared directory access ထိန်းခြင်း
 - SSH key နဲ့ Windows မှ Ubuntu VM ကို ဝင်ခြင်း
@@ -120,12 +121,3 @@ Git status မှာ README နဲ့ `lab.html` ကို stage လုပ်ထ
 - UFW မှာ client IP တစ်ခုကိုသာ HTTP access ပေးပြီး result ပြန်တိုင်းခြင်း
 - Static page တင်ပြီး browser, permissions, logs ဖြင့် evidence စုခြင်း
 
-## Repository files
-
-```text
-README.md          ဒီပုံပါ walkthrough
-lab.html           deploy လုပ်ခဲ့သော page ၏ copy
-screenshots/       lab ၏ actual evidence screenshots
-```
-
-README ကိုသာ copy/paste လုပ်ရင် ပုံတွေ မပေါ်ပါ။ GitHub repo ရဲ့ `screenshots/` folder ထဲကို image files တွေကိုလည်း တူညီတဲ့ filename နဲ့ upload လုပ်ပါ။ Public repo တင်မီ ပုံထဲက username နဲ့ private LAN IP တွေကို ကိုယ်တိုင်စစ်ပါ။ Password နှင့် SSH private key ပုံတွေကို ဒီ project ထဲ မထည့်ထားပါ။
